@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:1339/api/';
+const LOCAL_BASE_URL = 'http://localhost:1339/api/';
+const HOSTED_BASE_URL = 'http://yohark.de:1340/api/';
 
 
 class Http {
@@ -8,7 +9,7 @@ class Http {
 	constructor() {}
 
 	static async get(url) {
-		return axios.get(BASE_URL + url);
+		return axios.get(HOSTED_BASE_URL + url);
 	}
 
 }

@@ -29,10 +29,10 @@ pipeline {
 				sh 'npm run generate'
 				echo 'Static files successfully generated.'
 				echo 'Transfering files to deployment folder...'
-				sh 'sudo cp -r dist/* /home/yohark/workspace/firebase_projects/sammy-lab/public/'
+				sh 'sudo cp -r dist/* /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/'
 				echo 'Success'
 				echo 'Deploying files to firebase...'
-				sh 'cd /home/yohark/workspace/firebase_projects/sammy-lab/ && firebase deploy'
+				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && firebase deploy'
 				echo 'Done!'
             }
         }

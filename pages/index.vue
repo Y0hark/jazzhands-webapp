@@ -11,9 +11,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="member in this.$store.state.members" :key="member.name">
-            <td>{{ member.member }}</td>
-            <td>{{ member.ranking }}</td>
+          <tr v-for="member in rankings" :key="member.name">
+            <td>{{ member.name }}</td>
+            <td>{{ member.rank }}</td>
           </tr>
         </tbody>
       </template>
@@ -34,8 +34,8 @@ export default {
     calculateRanking() {
       this.$store.state.members.forEach((member) => {
         this.rankings.push({
-          member: member.attributes.name,
-          ranking: Ranker.calculation(
+          name: member.attributes.name,
+          rank: Ranker.calculation(
             member.attributes.tierKronos,
             member.attributes.timeKronos,
             member.attributes.tierApep,
