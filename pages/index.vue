@@ -1,8 +1,23 @@
 <template>
   <div>
     Hello Luca! You are the best!
-    <v-btn color="info" @click="calculateRanking">Rank players</v-btn>
-    {{ rankings }}
+    <v-btn color="info" @click="calculateRanking">Rank memers</v-btn>
+    <v-simple-table>
+      <template v-slot:default>
+        <thead>
+          <tr>
+            <th class="text-left">Name</th>
+            <th class="text-left">Rank</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="member in this.$store.state.members" :key="member.name">
+            <td>{{ member.member }}</td>
+            <td>{{ member.ranking }}</td>
+          </tr>
+        </tbody>
+      </template>
+    </v-simple-table>
   </div>
 </template>
 <script>
