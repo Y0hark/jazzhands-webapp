@@ -1,13 +1,16 @@
 <template>
   <v-app dark>
     <Nuxt />
+    <NavBar />
   </v-app>
 </template>
 
 <script>
+import NavBar from "~/components/NavBar.vue";
 import Api from "../services/api";
 
 export default {
+  components: { NavBar },
   name: "DefaultLayout",
   mounted() {
     this.$store.subscribe((mutation, state) => {
