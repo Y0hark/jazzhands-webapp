@@ -5,15 +5,15 @@ pipeline {
         stage('Dependencies') {
             steps {
                 echo 'Retrieving dependencies..'
-				sh 'npm install'
-                echo 'Installation completed successfully.'
+				// sh 'npm install'
+                echo 'Installation executed later by firebase.'
             }
         }
         stage('Build') {
             steps {
                 echo 'Building project..'
-				sh 'npm run build'
-                echo 'Build completed successfully.'
+				// sh 'npm run build'
+                echo 'Build executed later by firebase.'
             }
         }
         stage('Test') {
@@ -24,15 +24,11 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                echo 'Deploying on firebase'
-				echo 'Generating static files..'
-				sh 'npm run generate'
-				echo 'Static files successfully generated.'
-				echo 'Transfering files to deployment folder...'
-				sh 'sudo cp -r dist/* /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/'
-				echo 'Success'
-				echo 'Deploying files to firebase...'
-				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && firebase deploy'
+                echo 'Deploying functions on firebase'
+				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && firebase deploy --only functions'
+				echo 'Done!'
+                echo 'Deploying hosting on firebase'
+				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && firebase deploy --only hosting'
 				echo 'Done!'
             }
         }
