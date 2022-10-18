@@ -19,7 +19,7 @@ class Ranker {
    */
   static calculation(tierKronos, timeKronos, tierApep, timeApep, tierFafnir, timeFafnir, bestPw, gradeShadowgale, gradeShadowstream, gradeShadowfire, gradeDarkstarlord, config) {
 
-	// console.log("Tier Kronos: " + tierKronos, "Time Kronos: " + timeKronos, "Tier Apep: " + tierApep, "Time Apep: " + timeApep, "Tier Fafnir: " + tierFafnir, "Time Fafnir: " + timeFafnir, "Best PW: " + bestPw, "Grade Shadowgale: " + gradeShadowgale, "Grade Shadowstream: " + gradeShadowstream, "Grade Shadowfire: " + gradeShadowfire, "Grade Darkstarlord: " + gradeDarkstarlord)
+	console.log("Tier Kronos: " + tierKronos, "Time Kronos: " + timeKronos, "Tier Apep: " + tierApep, "Time Apep: " + timeApep, "Tier Fafnir: " + tierFafnir, "Time Fafnir: " + timeFafnir, "Best PW: " + bestPw, "Grade Shadowgale: " + gradeShadowgale, "Grade Shadowstream: " + gradeShadowstream, "Grade Shadowfire: " + gradeShadowfire, "Grade Darkstarlord: " + gradeDarkstarlord)
 
 	let memberTimes = {
 		kronosTime: timeKronos,
@@ -29,7 +29,7 @@ class Ranker {
 
 	memberTimes = this.sanitizeMember(memberTimes)
 
-	// console.log("Sanitized Times: " + memberTimes.kronosTime, memberTimes.apepTime, memberTimes.fafnirTime)
+	console.log("Sanitized Times: " + memberTimes.kronosTime, memberTimes.apepTime, memberTimes.fafnirTime)
 
     const miraclePoints = this.getMiraclePoints(tierKronos, memberTimes.kronosTime, tierApep, memberTimes.apepTime, tierFafnir, memberTimes.fafnirTime, config)
     const bestPwPoints = this.getPointWarPoints(bestPw, config)
@@ -131,12 +131,6 @@ class Ranker {
 	for (const [key, value] of Object.entries(member)) {
 		if (key === 'kronosTime' || key === 'apepTime' || key === 'fafnirTime') {
 			const time = value.split(':')
-			const seconds = time[1][1]
-			const secondsDecimal = time[1][0] 
-			if (seconds != '0') {
-				parseInt(seconds) >= 5 && parseInt(secondsDecimal) < 5 ? sanitizedMember[key] = `${time[0]}:${(parseInt(secondsDecimal)+1).toString}0` : sanitizedMember[key] = `${time[0]}:${secondsDecimal}0`
-				parseInt(seconds) >= 5 && parseInt(secondsDecimal) === 5 ? sanitizedMember[key] = `${(parseInt(time[0])+1).toString()}:00` : sanitizedMember[key] = `${time[1]}:${secondsDecimal}0`
-			} 
 			if (key === 'kronosTime' || key === 'apepTime') {
 				time[0] === '0' && time[1][0] === '1' ? sanitizedMember[key] = '0:20' : sanitizedMember[key] = value
 				parseInt(time[0]) >= 3 ? sanitizedMember[key] = 'MAX' : sanitizedMember[key] = value
