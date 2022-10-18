@@ -5,7 +5,7 @@ pipeline {
         stage('Dependencies') {
             steps {
                 echo 'Retrieving dependencies..'
-				sh 'npm install'
+				sh 'sudo npm install'
                 echo 'Done.'
 				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/functions/ && sudo npm install'
             }
