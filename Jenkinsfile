@@ -25,10 +25,10 @@ pipeline {
         stage('Deployment') {
             steps {
                 echo 'Deploying functions on firebase'
-				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && firebase deploy --only functions'
+				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && sudo firebase deploy --only functions'
 				echo 'Done!'
                 echo 'Deploying hosting on firebase'
-				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && firebase deploy --only hosting'
+				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && sudo firebase deploy --only hosting'
 				echo 'Done!'
             }
         }
