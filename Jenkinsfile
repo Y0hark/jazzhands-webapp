@@ -5,16 +5,15 @@ pipeline {
         stage('Dependencies') {
             steps {
                 echo 'Retrieving dependencies..'
-				sh 'sudo npm install'
-                echo 'Done.'
-				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/functions/ && sudo npm install'
+				sh 'npm install'
+                echo 'SUCESS. Dependencies retrieved.'
             }
         }
         stage('Build') {
             steps {
                 echo 'Building project..'
-				// sh 'npm run build'
-                echo 'Build executed later by firebase.'
+				sh 'npm run build'
+                echo 'SUCESS. Build completed.'
             }
         }
         stage('Test') {
@@ -25,12 +24,9 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                echo 'Deploying functions on firebase'
-				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && sudo firebase deploy --only functions'
-				echo 'Done!'
-                echo 'Deploying hosting on firebase'
-				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && sudo firebase deploy --only hosting'
-				echo 'Done!'
+                echo 'Deploying project on firebase'
+				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && sudo firebase deploy'
+				echo 'SUCESS. Project deployed on firebase.'
             }
         }
     }
