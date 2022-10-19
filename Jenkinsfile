@@ -5,14 +5,14 @@ pipeline {
         stage('Dependencies') {
             steps {
                 echo 'Retrieving dependencies..'
-				sh 'npm install'
+				sh 'sudo npm install'
                 echo 'SUCESS. Dependencies retrieved.'
             }
         }
         stage('Build') {
             steps {
                 echo 'Building project..'
-				sh 'npm run build'
+				sh 'sudo npm run build'
                 echo 'SUCESS. Build completed.'
             }
         }
