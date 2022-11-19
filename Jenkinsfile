@@ -32,7 +32,7 @@ pipeline {
         stage('Deployment') {
             steps {
                 echo 'Deploying project on firebase'
-				sh 'cp /dist/* /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/'
+				sh 'sudo cp -r dist/* /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/'
 				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/ && sudo firebase deploy'
 				echo 'SUCESS. Project deployed on firebase.'
             }
