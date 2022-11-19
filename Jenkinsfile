@@ -16,6 +16,13 @@ pipeline {
                 echo 'SUCESS. Build completed.'
             }
         }
+		stage('Distribution') {
+            steps {
+                echo 'Distributing project..'
+				sh 'sudo npm run generate'
+                echo 'SUCESS. Dist completed.'
+            }
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'
@@ -25,7 +32,8 @@ pipeline {
         stage('Deployment') {
             steps {
                 echo 'Deploying project on firebase'
-				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && sudo firebase deploy'
+				sh 'cp /dist/* /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/'
+				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/ && sudo firebase deploy'
 				echo 'SUCESS. Project deployed on firebase.'
             }
         }
