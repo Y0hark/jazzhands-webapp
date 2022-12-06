@@ -4,6 +4,8 @@ const LOCAL_BASE_URL = 'http://localhost:1339/api/';
 const HOSTED_BASE_URL = 'https://yohark.de/jazzhands/';
 const PAGINATION_PARAMS = '?pagination[pageSize]=30';
 const POPULATE_PARAMS = '&populate=*';
+const POPULATE_PARAMS_SOLE_ALL = '?populate=*';
+const POPULATE_PARAMS_SOLE_CONTENT = '?populate[content][populate]=*';
 
 
 class Http {
@@ -38,6 +40,14 @@ class Api {
 
 	static async getGuides() {
 		return (await Http.get('guides' + PAGINATION_PARAMS + POPULATE_PARAMS)).data;
+	}
+
+	static async getGuide(id) {
+		return (await Http.get('guides/' + id + POPULATE_PARAMS_SOLE_ALL)).data;
+	}
+
+	static async getGuideContent(id) {
+		return (await Http.get('guides/' + id + POPULATE_PARAMS_SOLE_CONTENT)).data;
 	}
 
 }
