@@ -1,47 +1,57 @@
 <template>
-  <v-card height="56" color="#121212" elevation="0">
-    <v-bottom-navigation
-      v-model="value"
-      :background-color="color"
-      dark
-      shift
-      app
-      hide-on-scroll
-    >
-      <v-btn to="/">
-        <span>Home</span>
+	<v-bottom-navigation
+		mode="shift"
+		fixed="true"
+		:model-value="this.$route.name"
+		mandatory="true"
+	>
+		<v-btn
+			v-for="(btn, index) in buttons"
+			:key="index"
+			:to="btn.link"
+			:value="btn.value"
+		>
+			<v-icon>{{ btn.icon }}</v-icon>
 
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
-
-      <v-btn to="/news">
-        <span>News</span>
-
-        <v-icon>mdi-newspaper</v-icon>
-      </v-btn>
-
-      <v-btn to="/guides">
-        <span>Guides</span>
-
-        <v-icon>mdi-book</v-icon>
-      </v-btn>
-
-      <v-btn to="/rankings">
-        <span>Rankings</span>
-
-        <v-icon>mdi-altimeter</v-icon>
-      </v-btn>
-    </v-bottom-navigation>
-  </v-card>
+			<span>{{ btn.text }}</span>
+		</v-btn>
+	</v-bottom-navigation>
 </template>
 <script>
 export default {
-  data() {
-    return {
-      value: 0,
-      color: "#121212",
-    };
-  },
+	data() {
+		return {
+			buttons: [
+				{
+					value: "home",
+					icon: "mdi-home",
+					text: "Home",
+					link: "/",
+				},
+				{
+					value: "news",
+					icon: "mdi-newspaper",
+					text: "News",
+					link: "/news",
+				},
+				{
+					value: "guides",
+					icon: "mdi-book-open-variant",
+					text: "Guides",
+					link: "/guides",
+				},
+				{
+					value: "rankings",
+					icon: "mdi-chart-box",
+					text: "Rankings",
+					link: "/rankings",
+				},
+			],
+		};
+	},
+	mounted() {
+		console.log(this.$route.name);
+	},
 };
 </script>
 <style></style>
