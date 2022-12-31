@@ -1,8 +1,8 @@
 <template>
-	<v-app>
+	<v-app class="text-mainText bg-mainBackground">
 		<NuxtLayout>
 			<NavBar />
-			<NuxtPage />
+			<NuxtPage class="mb-14 text-mainText" />
 		</NuxtLayout>
 	</v-app>
 </template>

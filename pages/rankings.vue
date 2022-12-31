@@ -1,12 +1,19 @@
 <template>
 	<v-container grid-list-xs>
-		<h2 class="text-h5 text-center mb-4">this is the ranking page</h2>
-		<!-- <v-expansion-panels v-model="panel">
-			<v-expansion-panel>
-				<v-expansion-panel-header>
-					How to improve my score?
-				</v-expansion-panel-header>
-				<v-expansion-panel-content>
+		<h2 class="text-h5 text-center mb-4">Jazzers Top Charts</h2>
+		<div class="mb-2">
+			<i>
+				This page displays a ranking of all the players within Jazzhands
+				Club. The calculatopn is based on several factors, which are
+				explained below.
+			</i>
+		</div>
+		<v-expansion-panels class="text-mainText">
+			<v-expansion-panel
+				title="How to improve my score?"
+				class="text-mainText"
+			>
+				<v-expansion-panel-text class="pa-4 text-mainText">
 					The score is calculated with very simple rules. It takes in
 					consideration several things from your achievements:
 					<ul>
@@ -40,30 +47,45 @@
 					Need help for this? Anytime you can ask the team to help you
 					out! We'll be happy yo provide help and advice.<br />
 
-					<b>Important note:</b> this is not a race. This is simply a
-					number to help you out tracking you own progress.
-				</v-expansion-panel-content>
+					<b class="text-accent2">Important note:</b> this is not a
+					race. This is simply a number to help you out tracking you
+					own progress.
+				</v-expansion-panel-text>
 			</v-expansion-panel>
-		</v-expansion-panels> -->
+		</v-expansion-panels>
 		<br />
-		<!-- <v-simple-table dense>
-			<template v-slot:default>
-				<thead>
-					<tr>
-						<th class="text-left">Club Rank</th>
-						<th class="text-left">Member</th>
-						<th class="text-left">Score</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr v-for="(member, index) in rankings" :key="index">
-						<td>{{ index + 1 }}</td>
-						<td>{{ member.name }}</td>
-						<td>{{ member.rank }}</td>
-					</tr>
-				</tbody>
-			</template>
-		</v-simple-table> -->
+		<v-card v-if="rankingLoading" :loading="rankingLoading">
+			<v-card-title class="text-h6 text-mainText">
+				Loading...
+			</v-card-title>
+		</v-card>
+		<div
+			v-if="rankings[0] === undefined"
+			class="text-h6 text-mainText pa-6"
+			align="center"
+		>
+			That's a bit sad but we don't have any players ranked to show you :(
+		</div>
+		<v-table class="text-mainText">
+			<thead>
+				<tr>
+					<th class="text-left">Club Rank</th>
+					<th class="text-left">Member</th>
+					<th class="text-left">Score</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr
+					v-for="(member, index) in rankings"
+					:key="index"
+					:class="{ 'bg-primary2': index in [0, 1, 2] }"
+				>
+					<td>{{ index + 1 }}</td>
+					<td>{{ member.name }}</td>
+					<td>{{ member.rank }}</td>
+				</tr>
+			</tbody>
+		</v-table>
 	</v-container>
 </template>
 <script>
@@ -74,18 +96,16 @@ import Api from "../services/api";
 export default {
 	name: "rankingsPage",
 	setup() {
+		const rankingLoading = ref(true);
 		const store = useStore();
 		const rankings = [];
 		Api.getConfig().then((response) => {
 			store.config = response.data.attributes.rankingConf;
 		});
 		Api.getMembers().then((response) => {
-			response.data.forEach((element) => {
-				store.addMember(element);
-			});
+			store.members = response.data;
 		});
 		const members = store.members;
-
 		members.forEach((member) => {
 			rankings.push({
 				name: member.attributes.name,
@@ -105,10 +125,9 @@ export default {
 				),
 			});
 		});
-
 		rankings.sort((a, b) => (a.rank < b.rank ? 1 : -1));
-
-		return { store, rankings };
+		rankingLoading.value = false;
+		return { store, rankings, rankingLoading };
 	},
 	data() {
 		return {
@@ -117,4 +136,12 @@ export default {
 	},
 };
 </script>
-<style></style>
+<style scoped>
+ul {
+	margin-left: 2em;
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+</style>

@@ -4,6 +4,7 @@
 		fixed="true"
 		:model-value="this.$route.name"
 		mandatory="true"
+		class="text-mainText"
 	>
 		<v-btn
 			v-for="(btn, index) in buttons"
