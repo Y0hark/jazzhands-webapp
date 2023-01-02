@@ -60,7 +60,7 @@
 			</v-card-title>
 		</v-card>
 		<div
-			v-if="rankings[0] === undefined"
+			v-if="rankings[0] === undefined && rankingLoading == false"
 			class="text-h6 text-mainText pa-6"
 			align="center"
 		>
@@ -95,14 +95,14 @@ import Api from "../services/api";
 
 export default {
 	name: "rankingsPage",
-	setup() {
+	async setup() {
 		const rankingLoading = ref(true);
 		const store = useStore();
 		const rankings = [];
-		Api.getConfig().then((response) => {
+		await Api.getConfig().then((response) => {
 			store.config = response.data.attributes.rankingConf;
 		});
-		Api.getMembers().then((response) => {
+		await Api.getMembers().then((response) => {
 			store.members = response.data;
 		});
 		const members = store.members;
