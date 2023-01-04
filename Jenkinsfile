@@ -19,7 +19,7 @@ pipeline {
 		stage('Distribution') {
             steps {
 				echo 'Cleaning dist folder..'
-				sh 'sudo rm -rf dist/*'
+				sh 'sudo rm -rf .output/*'
                 echo 'Distributing project..'
 				sh 'sudo npm run generate'
                 echo 'SUCESS. Dist completed.'
@@ -37,7 +37,7 @@ pipeline {
 				echo 'Cleaning firebase project folder..'
 				sh 'sudo rm -rf /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/*'
 				echo 'Copying dist folder to firebase project folder..'
-				sh 'sudo cp -r dist/* /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/'
+				sh 'sudo cp -r .output/public/* /home/yohark/workspace/firebase_projects/jazzhands-webapp/public/'
 				echo 'Deploying project on firebase..'
 				sh 'cd /home/yohark/workspace/firebase_projects/jazzhands-webapp/ && sudo firebase deploy'
 				echo 'SUCESS. Project deployed on firebase.'
