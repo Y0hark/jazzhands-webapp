@@ -60,7 +60,7 @@
 			</v-card-title>
 		</v-card>
 		<div
-			v-if="rankings[0] === undefined && rankingLoading == false"
+			v-if="rankings[0] === undefined && rankingLoading === false"
 			class="text-h6 text-mainText pa-6"
 			align="center"
 		>
