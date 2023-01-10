@@ -121,6 +121,12 @@ export default {
 					member.attributes.shadowstream,
 					member.attributes.shadowfire,
 					member.attributes.darkstarlord,
+					member.attributes.infinityTowerFloor,
+					member.attributes.infinityTowerStars,
+					member.attributes.temporalTowerFloor,
+					member.attributes.cbrWinner,
+					member.attributes.cbrSecond,
+					member.attributes.cbrThird,
 					store.config
 				),
 			});

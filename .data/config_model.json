@@ -1,0 +1,1069 @@
+{
+	"apepConfig": {
+		"speed": [
+			{
+				"time": "0:20",
+				"scoreMulti": 2.5
+			},
+			{
+				"time": "0:30",
+				"scoreMulti": 2.4
+			},
+			{
+				"time": "0:40",
+				"scoreMulti": 2.2
+			},
+			{
+				"time": "0:50",
+				"scoreMulti": 2
+			},
+			{
+				"time": "1:00",
+				"scoreMulti": 1.8
+			},
+			{
+				"time": "1:10",
+				"scoreMulti": 1.6
+			},
+			{
+				"time": "1:20",
+				"scoreMulti": 1.4
+			},
+			{
+				"time": "1:30",
+				"scoreMulti": 1.2
+			},
+			{
+				"time": "1:40",
+				"scoreMulti": 1
+			},
+			{
+				"time": "1:50",
+				"scoreMulti": 1
+			},
+			{
+				"time": "2:00",
+				"scoreMulti": 0.9
+			},
+			{
+				"time": "2:10",
+				"scoreMulti": 0.8
+			},
+			{
+				"time": "2:20",
+				"scoreMulti": 0.7
+			},
+			{
+				"time": "2:30",
+				"scoreMulti": 0.6
+			},
+			{
+				"time": "2:40",
+				"scoreMulti": 0.5
+			},
+			{
+				"time": "2:50",
+				"scoreMulti": 0.5
+			},
+			{
+				"time": "MAX",
+				"scoreMulti": 0.5
+			}
+		],
+		"tiers": [
+			{
+				"tier": 1,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 2,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 3,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 4,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 5,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 6,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 7,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 8,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 9,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 10,
+				"scoreMulti": 0.5
+			},
+			{
+				"tier": 11,
+				"scoreMulti": 0.8
+			},
+			{
+				"tier": 12,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 13,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 14,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 15,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 16,
+				"scoreMulti": 1.2
+			}
+		]
+	},
+	"fafnirConfig": {
+		"speed": [
+			{
+				"time": "0:40",
+				"scoreMulti": 3
+			},
+			{
+				"time": "0:50",
+				"scoreMulti": 2.9
+			},
+			{
+				"time": "1:00",
+				"scoreMulti": 2.8
+			},
+			{
+				"time": "1:10",
+				"scoreMulti": 2.7
+			},
+			{
+				"time": "1:20",
+				"scoreMulti": 2.6
+			},
+			{
+				"time": "1:30",
+				"scoreMulti": 2.5
+			},
+			{
+				"time": "1:40",
+				"scoreMulti": 2.4
+			},
+			{
+				"time": "1:50",
+				"scoreMulti": 2.3
+			},
+			{
+				"time": "2:00",
+				"scoreMulti": 2.2
+			},
+			{
+				"time": "2:10",
+				"scoreMulti": 2
+			},
+			{
+				"time": "2:20",
+				"scoreMulti": 1.8
+			},
+			{
+				"time": "2:30",
+				"scoreMulti": 1.6
+			},
+			{
+				"time": "2:40",
+				"scoreMulti": 1.4
+			},
+			{
+				"time": "2:50",
+				"scoreMulti": 1.2
+			},
+			{
+				"time": "3:00",
+				"scoreMulti": 1
+			},
+			{
+				"time": "3:10",
+				"scoreMulti": 0.8
+			},
+			{
+				"time": "3:20",
+				"scoreMulti": 0.5
+			},
+			{
+				"time": "3:30",
+				"scoreMulti": 0.5
+			},
+			{
+				"time": "3:40",
+				"scoreMulti": 0.5
+			},
+			{
+				"time": "3:50",
+				"scoreMulti": 0.5
+			},
+			{
+				"time": "MAX",
+				"scoreMulti": 0.5
+			}
+		],
+		"tiers": [
+			{
+				"tier": 1,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 2,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 3,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 4,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 5,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 6,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 7,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 8,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 9,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 10,
+				"scoreMulti": 0.5
+			},
+			{
+				"tier": 11,
+				"scoreMulti": 0.8
+			},
+			{
+				"tier": 12,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 13,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 14,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 15,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 16,
+				"scoreMulti": 1.2
+			}
+		]
+	},
+	"globalConfig": {
+		"ritualBaseScore": 5,
+		"pointWarBaseScore": 30,
+		"sentinelBaseScore": 40,
+		"desolatedLandsBaseScore": 30,
+		"temporalTowerBaseScore": 10,
+		"infinityTowerBaseScore": 30,
+		"cbrWinnerBaseScore": 20,
+		"cbrSecondBaseScore": 10,
+		"cbrThirdBaseScore": 5
+	},
+	"kronosConfig": {
+		"speed": [
+			{
+				"time": "0:20",
+				"scoreMulti": 2.5
+			},
+			{
+				"time": "0:30",
+				"scoreMulti": 2.4
+			},
+			{
+				"time": "0:40",
+				"scoreMulti": 2.2
+			},
+			{
+				"time": "0:50",
+				"scoreMulti": 2
+			},
+			{
+				"time": "1:00",
+				"scoreMulti": 1.8
+			},
+			{
+				"time": "1:10",
+				"scoreMulti": 1.6
+			},
+			{
+				"time": "1:20",
+				"scoreMulti": 1.4
+			},
+			{
+				"time": "1:30",
+				"scoreMulti": 1.2
+			},
+			{
+				"time": "1:40",
+				"scoreMulti": 1
+			},
+			{
+				"time": "1:50",
+				"scoreMulti": 1
+			},
+			{
+				"time": "2:00",
+				"scoreMulti": 0.9
+			},
+			{
+				"time": "2:10",
+				"scoreMulti": 0.8
+			},
+			{
+				"time": "2:20",
+				"scoreMulti": 0.7
+			},
+			{
+				"time": "2:30",
+				"scoreMulti": 0.6
+			},
+			{
+				"time": "2:40",
+				"scoreMulti": 0.5
+			},
+			{
+				"time": "2:50",
+				"scoreMulti": 0.5
+			},
+			{
+				"time": "MAX",
+				"scoreMulti": 0.5
+			}
+		],
+		"tiers": [
+			{
+				"tier": 1,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 2,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 3,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 4,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 5,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 6,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 7,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 8,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 9,
+				"scoreMulti": 0.1
+			},
+			{
+				"tier": 10,
+				"scoreMulti": 0.5
+			},
+			{
+				"tier": 11,
+				"scoreMulti": 0.8
+			},
+			{
+				"tier": 12,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 13,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 14,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 15,
+				"scoreMulti": 1
+			},
+			{
+				"tier": 16,
+				"scoreMulti": 1.2
+			}
+		]
+	},
+	"pointWarConfig": {
+		"tiers": [
+			{
+				"PWT": 1,
+				"scoreMulti": 0.1
+			},
+			{
+				"PWT": 2,
+				"scoreMulti": 0.1
+			},
+			{
+				"PWT": 3,
+				"scoreMulti": 0.1
+			},
+			{
+				"PWT": 4,
+				"scoreMulti": 0.2
+			},
+			{
+				"PWT": 5,
+				"scoreMulti": 0.3
+			},
+			{
+				"PWT": 6,
+				"scoreMulti": 0.4
+			},
+			{
+				"PWT": 7,
+				"scoreMulti": 0.5
+			},
+			{
+				"PWT": 8,
+				"scoreMulti": 0.6
+			},
+			{
+				"PWT": 9,
+				"scoreMulti": 0.8
+			},
+			{
+				"PWT": 10,
+				"scoreMulti": 1
+			},
+			{
+				"PWT": 11,
+				"scoreMulti": 1.2
+			},
+			{
+				"PWT": 12,
+				"scoreMulti": 1.5
+			},
+			{
+				"PWT": 13,
+				"scoreMulti": 1.8
+			},
+			{
+				"PWT": 14,
+				"scoreMulti": 3
+			},
+			{
+				"PWT": 15,
+				"scoreMulti": 3.5
+			},
+			{
+				"PWT": 16,
+				"scoreMulti": 4
+			},
+			{
+				"PWT": 17,
+				"scoreMulti": 4.5
+			},
+			{
+				"PWT": 18,
+				"scoreMulti": 5
+			}
+		]
+	},
+	"shadowFireConfig": {
+		"grades": [
+			{
+				"grade": "E",
+				"scoreMulti": "0.1"
+			},
+			{
+				"grade": "D",
+				"scoreMulti": "0.2"
+			},
+			{
+				"grade": "C",
+				"scoreMulti": "0.3"
+			},
+			{
+				"grade": "B",
+				"scoreMulti": "0.4"
+			},
+			{
+				"grade": "A",
+				"scoreMulti": "0.8"
+			},
+			{
+				"grade": "A2",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "S",
+				"scoreMulti": "1.2"
+			},
+			{
+				"grade": "SS",
+				"scoreMulti": "1.5"
+			},
+			{
+				"grade": "SSS",
+				"scoreMulti": "2"
+			},
+			{
+				"grade": "EX",
+				"scoreMulti": "2.5"
+			},
+			{
+				"grade": "EX2",
+				"scoreMulti": "3"
+			},
+			{
+				"grade": "EX3",
+				"scoreMulti": "3.5"
+			}
+		]
+	},
+	"shadowGaleConfig": {
+		"grades": [
+			{
+				"grade": "E",
+				"scoreMulti": "0.1"
+			},
+			{
+				"grade": "D",
+				"scoreMulti": "0.2"
+			},
+			{
+				"grade": "C",
+				"scoreMulti": "0.3"
+			},
+			{
+				"grade": "B",
+				"scoreMulti": "0.4"
+			},
+			{
+				"grade": "A",
+				"scoreMulti": "0.8"
+			},
+			{
+				"grade": "A2",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "S",
+				"scoreMulti": "1.2"
+			},
+			{
+				"grade": "SS",
+				"scoreMulti": "1.5"
+			},
+			{
+				"grade": "SSS",
+				"scoreMulti": "2"
+			},
+			{
+				"grade": "EX",
+				"scoreMulti": "2.5"
+			},
+			{
+				"grade": "EX2",
+				"scoreMulti": "3"
+			},
+			{
+				"grade": "EX3",
+				"scoreMulti": "3.5"
+			}
+		]
+	},
+	"darkStarLordConfig": {
+		"grades": [
+			{
+				"grade": "E",
+				"scoreMulti": "0.1"
+			},
+			{
+				"grade": "D",
+				"scoreMulti": "0.2"
+			},
+			{
+				"grade": "C",
+				"scoreMulti": "0.3"
+			},
+			{
+				"grade": "B",
+				"scoreMulti": "0.4"
+			},
+			{
+				"grade": "A",
+				"scoreMulti": "0.8"
+			},
+			{
+				"grade": "A2",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "S",
+				"scoreMulti": "1.2"
+			},
+			{
+				"grade": "SS",
+				"scoreMulti": "1.5"
+			},
+			{
+				"grade": "SSS",
+				"scoreMulti": "2"
+			},
+			{
+				"grade": "EX",
+				"scoreMulti": "2.5"
+			},
+			{
+				"grade": "EX2",
+				"scoreMulti": "3"
+			},
+			{
+				"grade": "EX3",
+				"scoreMulti": "3.5"
+			}
+		]
+	},
+	"shadowStreamConfig": {
+		"grades": [
+			{
+				"grade": "E",
+				"scoreMulti": "0.1"
+			},
+			{
+				"grade": "D",
+				"scoreMulti": "0.2"
+			},
+			{
+				"grade": "C",
+				"scoreMulti": "0.3"
+			},
+			{
+				"grade": "B",
+				"scoreMulti": "0.4"
+			},
+			{
+				"grade": "A",
+				"scoreMulti": "0.8"
+			},
+			{
+				"grade": "A2",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "S",
+				"scoreMulti": "1.2"
+			},
+			{
+				"grade": "SS",
+				"scoreMulti": "1.5"
+			},
+			{
+				"grade": "SSS",
+				"scoreMulti": "2"
+			},
+			{
+				"grade": "EX",
+				"scoreMulti": "2.5"
+			},
+			{
+				"grade": "EX2",
+				"scoreMulti": "3"
+			},
+			{
+				"grade": "EX3",
+				"scoreMulti": "3.5"
+			}
+		]
+	},
+	"temporalTowerConfig": {
+		"floors": [
+			{
+				"floor": 1,
+				"scoreMulti": 0.1
+			},
+			{
+				"floor": 5,
+				"scoreMulti": 0.2
+			},
+			{
+				"floor": 10,
+				"scoreMulti": 0.3
+			},
+			{
+				"floor": 15,
+				"scoreMulti": 0.4
+			},
+			{
+				"floor": 20,
+				"scoreMulti": 0.5
+			},
+			{
+				"floor": 25,
+				"scoreMulti": 0.6
+			},
+			{
+				"floor": 30,
+				"scoreMulti": 0.8
+			},
+			{
+				"floor": 35,
+				"scoreMulti": 1
+			},
+			{
+				"floor": 40,
+				"scoreMulti": 1.5
+			},
+			{
+				"floor": 45,
+				"scoreMulti": 2
+			},
+			{
+				"floor": 50,
+				"scoreMulti": 2.5
+			}
+		]
+	},
+	"infinityTowerConfig": {
+		"floors": [
+			{
+				"floor": 1,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 0.2
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 0.4
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 0.6
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 1.2
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 1.5
+					}
+				]
+			},
+			{
+				"floor": 2,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 0.2
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 0.4
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 0.6
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1.2
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 1.5
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 1.7
+					}
+				]
+			},
+			{
+				"floor": 3,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 0.3
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 0.6
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 0.9
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1.3
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 1.6
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 1.9
+					}
+				]
+			},
+			{
+				"floor": 4,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 0.3
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 0.6
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 0.9
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1.3
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 1.6
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 1.9
+					}
+				]
+			},
+			{
+				"floor": 5,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 0.4
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 0.7
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1.5
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 1.8
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 2.1
+					}
+				]
+			},
+			{
+				"floor": 6,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 0.4
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 0.7
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1.5
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 2
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 2.5
+					}
+				]
+			},
+			{
+				"floor": 7,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 0.5
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 0.8
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1.5
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 2.2
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 2.8
+					}
+				]
+			},
+			{
+				"floor": 8,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 0.7
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1.2
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1.7
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 2.5
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 3
+					}
+				]
+			},
+			{
+				"floor": 9,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 1.2
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1.4
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 1.9
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 2.8
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 3.2
+					}
+				]
+			},
+			{
+				"floor": 10,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 1.2
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 1.4
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1.6
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 2
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 3
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 3.5
+					}
+				]
+			}
+		]
+	}
+}
