@@ -17,15 +17,12 @@
 					The score is calculated with very simple rules. It takes in
 					consideration several things from your achievements:
 					<ul>
-						<li>
-							Your Miracle scores: your best performance
-							(displayed on you profile)
-						</li>
-						<li>
-							Your Desolated Lands scores (also on your profile)
-						</li>
-						<li>Your best Point War rank (on your player card)</li>
+						<li>Your Miracle scores: your best performance</li>
+						<li>Your Desolated Lands scores</li>
+						<li>Your best Point War rank</li>
 						<li>Your best score in Sentinel Hunt</li>
+						<li>Your best Temporal Tower Score</li>
+						<li>Your best Infinity Tower Score</li>
 					</ul>
 					<br />
 					<i>You can improve them by doing these:</i>
@@ -40,7 +37,18 @@
 						</li>
 						<li>
 							For Sentinel Hunt: improve your score as we don't
-							take the time you take into consideration.
+							take the time you take into consideration. This is
+							one of the mechanics that gives the more points.
+						</li>
+						<li>
+							For Temporal Tower: this is a bit special. If you
+							didn't clear TT50, it gives your score a
+							<b>"-5"</b> for every 5 floors your are below 50.
+						</li>
+						<li>
+							For Infinity Tower: Aim for higher floors and more
+							stars. This is one of the mechanics that gives the
+							more points.
 						</li>
 					</ul>
 					<br />

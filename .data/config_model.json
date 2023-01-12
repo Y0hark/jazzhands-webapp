@@ -293,12 +293,12 @@
 	},
 	"globalConfig": {
 		"ritualBaseScore": 5,
-		"pointWarBaseScore": 30,
-		"sentinelBaseScore": 40,
-		"desolatedLandsBaseScore": 30,
-		"temporalTowerBaseScore": 10,
-		"infinityTowerBaseScore": 30,
-		"cbrWinnerBaseScore": 20,
+		"pointWarBaseScore": 20,
+		"sentinelBaseScore": 20,
+		"desolatedLandsBaseScore": 15,
+		"temporalTowerBaseScore": 0,
+		"infinityTowerBaseScore": 25,
+		"cbrWinnerBaseScore": 15,
 		"cbrSecondBaseScore": 10,
 		"cbrThirdBaseScore": 5
 	},
@@ -669,6 +669,26 @@
 			{
 				"grade": "EX3",
 				"scoreMulti": "3.5"
+			},
+			{
+				"grade": "EX5",
+				"scoreMulti": "4"
+			},
+			{
+				"grade": "EX7.5",
+				"scoreMulti": "4.5"
+			},
+			{
+				"grade": "EX10",
+				"scoreMulti": "5"
+			},
+			{
+				"grade": "EX12.5",
+				"scoreMulti": "5.5"
+			},
+			{
+				"grade": "EX15",
+				"scoreMulti": "6"
 			}
 		]
 	},
@@ -728,47 +748,47 @@
 		"floors": [
 			{
 				"floor": 1,
-				"scoreMulti": 0.1
+				"scoreMulti": 50
 			},
 			{
 				"floor": 5,
-				"scoreMulti": 0.2
+				"scoreMulti": 45
 			},
 			{
 				"floor": 10,
-				"scoreMulti": 0.3
+				"scoreMulti": 40
 			},
 			{
 				"floor": 15,
-				"scoreMulti": 0.4
+				"scoreMulti": 35
 			},
 			{
 				"floor": 20,
-				"scoreMulti": 0.5
+				"scoreMulti": 30
 			},
 			{
 				"floor": 25,
-				"scoreMulti": 0.6
+				"scoreMulti": 25
 			},
 			{
 				"floor": 30,
-				"scoreMulti": 0.8
+				"scoreMulti": 20
 			},
 			{
 				"floor": 35,
-				"scoreMulti": 1
+				"scoreMulti": 15
 			},
 			{
 				"floor": 40,
-				"scoreMulti": 1.5
+				"scoreMulti": 10
 			},
 			{
 				"floor": 45,
-				"scoreMulti": 2
+				"scoreMulti": 5
 			},
 			{
 				"floor": 50,
-				"scoreMulti": 2.5
+				"scoreMulti": 0
 			}
 		]
 	},
@@ -783,11 +803,11 @@
 					},
 					{
 						"stars": 2,
-						"scoreMulti": 0.4
+						"scoreMulti": 0.2
 					},
 					{
 						"stars": 3,
-						"scoreMulti": 0.6
+						"scoreMulti": 0.2
 					},
 					{
 						"stars": 4,
@@ -795,11 +815,11 @@
 					},
 					{
 						"stars": 5,
-						"scoreMulti": 1.2
+						"scoreMulti": 1.5
 					},
 					{
 						"stars": 6,
-						"scoreMulti": 1.5
+						"scoreMulti": 2
 					}
 				]
 			},
@@ -808,7 +828,7 @@
 				"difficulty": [
 					{
 						"stars": 1,
-						"scoreMulti": 0.2
+						"scoreMulti": 0.4
 					},
 					{
 						"stars": 2,
@@ -816,94 +836,7 @@
 					},
 					{
 						"stars": 3,
-						"scoreMulti": 0.6
-					},
-					{
-						"stars": 4,
-						"scoreMulti": 1.2
-					},
-					{
-						"stars": 5,
-						"scoreMulti": 1.5
-					},
-					{
-						"stars": 6,
-						"scoreMulti": 1.7
-					}
-				]
-			},
-			{
-				"floor": 3,
-				"difficulty": [
-					{
-						"stars": 1,
-						"scoreMulti": 0.3
-					},
-					{
-						"stars": 2,
-						"scoreMulti": 0.6
-					},
-					{
-						"stars": 3,
-						"scoreMulti": 0.9
-					},
-					{
-						"stars": 4,
-						"scoreMulti": 1.3
-					},
-					{
-						"stars": 5,
-						"scoreMulti": 1.6
-					},
-					{
-						"stars": 6,
-						"scoreMulti": 1.9
-					}
-				]
-			},
-			{
-				"floor": 4,
-				"difficulty": [
-					{
-						"stars": 1,
-						"scoreMulti": 0.3
-					},
-					{
-						"stars": 2,
-						"scoreMulti": 0.6
-					},
-					{
-						"stars": 3,
-						"scoreMulti": 0.9
-					},
-					{
-						"stars": 4,
-						"scoreMulti": 1.3
-					},
-					{
-						"stars": 5,
-						"scoreMulti": 1.6
-					},
-					{
-						"stars": 6,
-						"scoreMulti": 1.9
-					}
-				]
-			},
-			{
-				"floor": 5,
-				"difficulty": [
-					{
-						"stars": 1,
 						"scoreMulti": 0.4
-					},
-					{
-						"stars": 2,
-						"scoreMulti": 0.7
-					},
-					{
-						"stars": 3,
-						"scoreMulti": 1
 					},
 					{
 						"stars": 4,
@@ -915,24 +848,24 @@
 					},
 					{
 						"stars": 6,
-						"scoreMulti": 2.1
+						"scoreMulti": 2.2
 					}
 				]
 			},
 			{
-				"floor": 6,
+				"floor": 3,
 				"difficulty": [
 					{
 						"stars": 1,
-						"scoreMulti": 0.4
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 2,
-						"scoreMulti": 0.7
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 3,
-						"scoreMulti": 1
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 4,
@@ -944,24 +877,24 @@
 					},
 					{
 						"stars": 6,
-						"scoreMulti": 2.5
+						"scoreMulti": 2.4
 					}
 				]
 			},
 			{
-				"floor": 7,
+				"floor": 4,
 				"difficulty": [
 					{
 						"stars": 1,
-						"scoreMulti": 0.5
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 2,
-						"scoreMulti": 0.8
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 3,
-						"scoreMulti": 1
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 4,
@@ -973,28 +906,28 @@
 					},
 					{
 						"stars": 6,
-						"scoreMulti": 2.8
+						"scoreMulti": 2.6
 					}
 				]
 			},
 			{
-				"floor": 8,
+				"floor": 5,
 				"difficulty": [
 					{
 						"stars": 1,
-						"scoreMulti": 0.7
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 2,
-						"scoreMulti": 1
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 3,
-						"scoreMulti": 1.2
+						"scoreMulti": 0.6
 					},
 					{
 						"stars": 4,
-						"scoreMulti": 1.7
+						"scoreMulti": 1.8
 					},
 					{
 						"stars": 5,
@@ -1007,23 +940,23 @@
 				]
 			},
 			{
-				"floor": 9,
+				"floor": 6,
 				"difficulty": [
 					{
 						"stars": 1,
-						"scoreMulti": 1
+						"scoreMulti": 0.8
 					},
 					{
 						"stars": 2,
-						"scoreMulti": 1.2
+						"scoreMulti": 0.8
 					},
 					{
 						"stars": 3,
-						"scoreMulti": 1.4
+						"scoreMulti": 0.8
 					},
 					{
 						"stars": 4,
-						"scoreMulti": 1.9
+						"scoreMulti": 2
 					},
 					{
 						"stars": 5,
@@ -1036,19 +969,19 @@
 				]
 			},
 			{
-				"floor": 10,
+				"floor": 7,
 				"difficulty": [
 					{
 						"stars": 1,
-						"scoreMulti": 1.2
+						"scoreMulti": 1
 					},
 					{
 						"stars": 2,
-						"scoreMulti": 1.4
+						"scoreMulti": 1
 					},
 					{
 						"stars": 3,
-						"scoreMulti": 1.6
+						"scoreMulti": 1
 					},
 					{
 						"stars": 4,
@@ -1061,6 +994,93 @@
 					{
 						"stars": 6,
 						"scoreMulti": 3.5
+					}
+				]
+			},
+			{
+				"floor": 8,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 2
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 3.2
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 3.7
+					}
+				]
+			},
+			{
+				"floor": 9,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 2
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 3.4
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 3.9
+					}
+				]
+			},
+			{
+				"floor": 10,
+				"difficulty": [
+					{
+						"stars": 1,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 2,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 3,
+						"scoreMulti": 1
+					},
+					{
+						"stars": 4,
+						"scoreMulti": 2
+					},
+					{
+						"stars": 5,
+						"scoreMulti": 4
+					},
+					{
+						"stars": 6,
+						"scoreMulti": 4.5
 					}
 				]
 			}

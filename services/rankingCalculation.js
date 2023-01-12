@@ -252,8 +252,7 @@ class Ranker {
 			(floor) => floor.floor === temporalTowerFloor
 		).scoreMulti;
 
-		const towerPoints =
-			towerFloor * config.globalConfig.temporalTowerBaseScore;
+		const towerPoints = config.globalConfig.temporalTowerBaseScore - towerFloor;
 
 		return towerPoints;
 	}
