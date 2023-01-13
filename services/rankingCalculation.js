@@ -92,7 +92,7 @@ class Ranker {
 			config
 		);
 
-		const totalPoints =
+		let totalPoints =
 			miraclePoints +
 			bestPwPoints +
 			desolatedLandsPoints +
@@ -100,6 +100,8 @@ class Ranker {
 			infinityTowerPoints +
 			temporalTowerPoints +
 			cbrPoints;
+
+		totalPoints = this.sanitizedTotal(totalPoints)
 
 		return totalPoints;
 	}
@@ -243,6 +245,11 @@ class Ranker {
 	 * @return {number} -> The total temporal tower points
 	 */
 	static getTemporalTowerPoints(temporalTowerFloor, config) {
+
+		while (temporalTowerFloor % 5 != 0) {
+			temporalTowerFloor -= 1
+		}
+
 		const towerFloor = config.temporalTowerConfig.floors.find(
 			(floor) => floor.floor === temporalTowerFloor
 		).scoreMulti;
@@ -305,6 +312,19 @@ class Ranker {
 			}
 		}
 		return sanitizedMember;
+	}
+
+	/**
+	 * 
+	 * @param {number} totalPoints -> the total points of the member
+	 * @returns {number} -> the total points without as an integer
+	 */
+	static sanitizedTotal(totalPoints) {
+		if (Number.isInteger(totalPoints) == false) {
+			totalPoints = Math.trunc(totalPoints)
+		}
+
+		return totalPoints
 	}
 }
 
