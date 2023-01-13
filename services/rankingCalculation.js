@@ -230,12 +230,7 @@ class Ranker {
 		infinityTowerStars,
 		config
 	) {
-		const towerFloor = config.infinityTowerConfig.floors.find(
-			(floor) => floor.floor === infinityTowerFloor
-		);
-		const towerMulti = towerFloor.difficulty.find(
-			(star) => star.stars === infinityTowerStars
-		).scoreMulti;
+		const towerMulti = infinityTowerStars / infinityTowerFloor
 		const towerPoints =
 			towerMulti * config.globalConfig.infinityTowerBaseScore;
 
