@@ -860,7 +860,7 @@
 			"multi5": 1.5,
 			"multi6": 2
 		},
-		"floorSecondThreshold": {
+		"secondThreshold": {
 			"floor": 7,
 			"multi5": 3,
 			"multi6": 5

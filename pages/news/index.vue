@@ -13,7 +13,11 @@
 		>
 			That's a bit sad but we don't have any news yet to show you :(
 		</div>
-		<v-card v-for="newsContent in news" :key="newsContent.attributes.slug">
+		<v-card
+			v-for="newsContent in news"
+			:key="newsContent.attributes.slug"
+			class="my-3"
+		>
 			<v-card-title class="pb-0 text-mainText">
 				{{ newsContent.attributes.title }}
 			</v-card-title>
@@ -46,7 +50,14 @@ export default {
 	},
 	async mounted() {
 		Api.getNews().then((response) => {
-			this.news = response.data;
+			const tempNewsList = response.data;
+			// sorting news by date (newest first)
+			tempNewsList.sort((a, b) => {
+				const dateA = new Date(a.attributes.createdAt);
+				const dateB = new Date(b.attributes.createdAt);
+				return dateB - dateA;
+			});
+			this.news = tempNewsList;
 			this.allNewsLoading = false;
 		});
 	},

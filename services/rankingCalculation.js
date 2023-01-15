@@ -261,19 +261,6 @@ class Ranker {
 				return towerPoints + config.infinityTowerConfig.firstThreshold.multi5 * infinityTowerFloor;
 			}
 		}
-
-		
-		// if (infinityTowerFloor > config.infinityTowerConfig.floorSecondThreshold) {
-		// 	if (infinityTowerStars >= infinityTowerFloor * 6 && infinityTowerStars % 6 == 0) {
-		// 		towerPoints += config.infinityTowerConfig.bonusMulti6 * infinityTowerFloor;
-		// 	} else if (infinityTowerStars >= infinityTowerFloor * 5 && infinityTowerStars % 5 == 0) {
-		// 		towerPoints += config.infinityTowerConfig.bonusMulti5 * infinityTowerFloor;
-		// 	}
-		// } else if (infinityTowerFloor > config.infinityTowerConfig.floorFirstThreshold) {
-		// 	if (infinityTowerStars >= infinityTowerFloor * 6 && infinityTowerStars % 6 == 0) {
-		// 		towerPoints += config.infinityTowerConfig.bonusMulti6 * infinityTowerFloor;
-		// 	}
-		// }
 		
 		return towerPoints;
 	}
