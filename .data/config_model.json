@@ -851,5 +851,19 @@
 				"scoreMulti": 0
 			}
 		]
+	},
+	"infinityTowerConfig": {
+		"maxFloor": 10,
+		"maxStars": 60,
+		"firstThreshold": {
+			"floor": 5,
+			"multi5": 1.5,
+			"multi6": 2
+		},
+		"floorSecondThreshold": {
+			"floor": 7,
+			"multi5": 3,
+			"multi6": 5
+		}
 	}
 }

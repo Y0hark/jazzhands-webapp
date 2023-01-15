@@ -234,8 +234,47 @@ class Ranker {
 	) {
 		const towerMulti = infinityTowerStars / infinityTowerFloor
 		const towerPoints =
-			towerMulti * config.globalConfig.infinityTowerBaseScore;
+			(towerMulti * config.globalConfig.infinityTowerBaseScore) * (infinityTowerFloor/config.infinityTowerConfig.maxFloor * infinityTowerStars/config.infinityTowerConfig.maxStars);
 
+		if (infinityTowerFloor > config.infinityTowerConfig.secondThreshold.floor) {
+			const starsOverThreshold = infinityTowerStars - config.infinityTowerConfig.secondThreshold.floor * 6;
+			if (starsOverThreshold > 0 && starsOverThreshold >= (infinityTowerFloor - config.infinityTowerConfig.secondThreshold.floor)*6) {
+				return towerPoints + config.infinityTowerConfig.secondThreshold.multi6 * infinityTowerFloor;
+			} else if (starsOverThreshold > 0 && starsOverThreshold >= (infinityTowerFloor - config.infinityTowerConfig.secondThreshold.floor)*5) {
+				return towerPoints + config.infinityTowerConfig.secondThreshold.multi5 * infinityTowerFloor;
+			}
+		} else if (infinityTowerFloor > config.infinityTowerConfig.secondThreshold.floor) {
+			const starsOverThreshold = infinityTowerStars - config.infinityTowerConfig.secondThreshold.floor * 5;
+			if (starsOverThreshold > 0 && starsOverThreshold >= (infinityTowerFloor - config.infinityTowerConfig.secondThreshold.floor)*5) {
+				return towerPoints + config.infinityTowerConfig.secondThreshold.multi5 * infinityTowerFloor;
+			}
+		} else if (infinityTowerFloor > config.infinityTowerConfig.firstThreshold.floor) {
+			const starsOverThreshold = infinityTowerStars - config.infinityTowerConfig.firstThreshold.floor * 6;
+			if (starsOverThreshold > 0 && starsOverThreshold >= starsOverThreshold >= (infinityTowerFloor - config.infinityTowerConfig.firstThreshold.floor)*6) {
+				return towerPoints + config.infinityTowerConfig.firstThreshold.multi6 * infinityTowerFloor;
+			} else if (starsOverThreshold > 0 && starsOverThreshold >= (infinityTowerFloor - config.infinityTowerConfig.firstThreshold.floor)*5) {
+				return towerPoints + config.infinityTowerConfig.firstThreshold.multi5 * infinityTowerFloor;
+			}
+		} else if (infinityTowerFloor > config.infinityTowerConfig.firstThreshold.floor) {
+			const starsOverThreshold = infinityTowerStars - config.infinityTowerConfig.firstThreshold.floor * 5;
+			if (starsOverThreshold > 0 && starsOverThreshold >= (infinityTowerFloor - config.infinityTowerConfig.firstThreshold.floor)*5) {
+				return towerPoints + config.infinityTowerConfig.firstThreshold.multi5 * infinityTowerFloor;
+			}
+		}
+
+		
+		// if (infinityTowerFloor > config.infinityTowerConfig.floorSecondThreshold) {
+		// 	if (infinityTowerStars >= infinityTowerFloor * 6 && infinityTowerStars % 6 == 0) {
+		// 		towerPoints += config.infinityTowerConfig.bonusMulti6 * infinityTowerFloor;
+		// 	} else if (infinityTowerStars >= infinityTowerFloor * 5 && infinityTowerStars % 5 == 0) {
+		// 		towerPoints += config.infinityTowerConfig.bonusMulti5 * infinityTowerFloor;
+		// 	}
+		// } else if (infinityTowerFloor > config.infinityTowerConfig.floorFirstThreshold) {
+		// 	if (infinityTowerStars >= infinityTowerFloor * 6 && infinityTowerStars % 6 == 0) {
+		// 		towerPoints += config.infinityTowerConfig.bonusMulti6 * infinityTowerFloor;
+		// 	}
+		// }
+		
 		return towerPoints;
 	}
 
@@ -250,11 +289,11 @@ class Ranker {
 			temporalTowerFloor -= 1
 		}
 
-		const towerFloor = config.temporalTowerConfig.floors.find(
+		const towerFloorMalus = config.temporalTowerConfig.floors.find(
 			(floor) => floor.floor === temporalTowerFloor
 		).scoreMulti;
 
-		const towerPoints = config.globalConfig.temporalTowerBaseScore - towerFloor;
+		const towerPoints = config.globalConfig.temporalTowerBaseScore - towerFloorMalus;
 
 		return towerPoints;
 	}
