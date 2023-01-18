@@ -13,28 +13,9 @@
 		>
 			That's a bit sad but we don't have any news yet to show you :(
 		</div>
-		<v-card
-			v-for="newsContent in news"
-			:key="newsContent.attributes.slug"
-			class="my-3"
-		>
-			<v-card-title class="pb-0 text-mainText">
-				{{ newsContent.attributes.title }}
-			</v-card-title>
-
-			<v-card-text>
-				<span class="font-weight-thin text-mainText">written by</span>
-				{{ newsContent.attributes.author.data.attributes.username }} -
-				<span class="font-weight-thin text-mainText">{{
-					newsContent.attributes.createdAt.split("T")[0]
-				}}</span>
-			</v-card-text>
-
-			<v-card-text
-				v-html="newsContent.attributes.content"
-				class="text-mainText"
-			/>
-		</v-card>
+		<div v-for="newsContent in news" :key="newsContent.attributes.slug">
+			<NewsCard :news="newsContent" />
+		</div>
 	</v-container>
 </template>
 <script>
@@ -50,14 +31,7 @@ export default {
 	},
 	async mounted() {
 		Api.getNews().then((response) => {
-			const tempNewsList = response.data;
-			// sorting news by date (newest first)
-			tempNewsList.sort((a, b) => {
-				const dateA = new Date(a.attributes.createdAt);
-				const dateB = new Date(b.attributes.createdAt);
-				return dateB - dateA;
-			});
-			this.news = tempNewsList;
+			this.news = response.data;
 			this.allNewsLoading = false;
 		});
 	},

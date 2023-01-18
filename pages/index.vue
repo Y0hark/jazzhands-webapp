@@ -4,17 +4,12 @@
 			<h1 class="text-h3 text-center mb-8">
 				<span class="text-center text-h6"></span>Jazzhands Club's Home
 			</h1>
-			<v-card v-if="bossMessageLoading" :loading="bossMessageLoading">
-				<v-card-title class="text-h6 text-mainText">
-					Loading...
-				</v-card-title>
-			</v-card>
 			<div
 				v-if="homeMessage === ''"
 				class="text-h6 text-mainText pa-6"
 				align="center"
 			>
-				That's a bit sad but the boss haven't posted any message yet :(
+				That's a bit sad but the boss hasn't posted any message yet :(
 			</div>
 			<v-card :loading="bossMessageLoading">
 				<v-card-title class="text-h6 text-mainText">
@@ -22,6 +17,20 @@
 				</v-card-title>
 				<v-card-text v-html="homeMessage" class="text-mainText" />
 			</v-card>
+			<v-card :loading="feedLoading" class="mt-10">
+				<v-card-title class="text-h6 text-mainText">
+					Feed
+				</v-card-title>
+			</v-card>
+			<div v-for="feedNews in feed.news" :key="feedNews.attributes.slug">
+				<NewsCard :news="feedNews" />
+			</div>
+			<div
+				v-for="feedGuide in feed.guides"
+				:key="feedGuide.attributes.slug"
+			>
+				<GuideCard :guide="feedGuide" />
+			</div>
 		</div>
 	</v-container>
 </template>
@@ -34,12 +43,25 @@ export default {
 		return {
 			homeMessage: "",
 			bossMessageLoading: true,
+			feed: {
+				news: [],
+				guides: [],
+			},
+			feedLoading: true,
 		};
 	},
 	async mounted() {
 		Api.getWelcomeMessage().then((response) => {
 			this.homeMessage = response.data.attributes.text_content;
 			this.bossMessageLoading = false;
+		});
+
+		Api.getFeed().then((response) => {
+			const tempFeed = response;
+			this.feed.news.push(tempFeed.news.data[0]);
+			this.feed.news.push(tempFeed.news.data[1]);
+			this.feed.guides.push(tempFeed.guides.data[0]);
+			this.feedLoading = false;
 		});
 	},
 };
