@@ -4,6 +4,11 @@
 			<h1 class="text-h3 text-center mb-8">
 				<span class="text-center text-h6"></span>Jazzhands Club's Home
 			</h1>
+			<v-card :loading="bossMessageLoading" class="mb-2">
+				<v-card-title class="text-h6 text-mainText">
+					Boss' message
+				</v-card-title>
+			</v-card>
 			<div
 				v-if="homeMessage === ''"
 				class="text-h6 text-mainText pa-6"
@@ -11,10 +16,7 @@
 			>
 				That's a bit sad but the boss hasn't posted any message yet :(
 			</div>
-			<v-card :loading="bossMessageLoading">
-				<v-card-title class="text-h6 text-mainText">
-					Boss' message
-				</v-card-title>
+			<v-card v-if="homeMessage != ''">
 				<v-card-text v-html="homeMessage" class="text-mainText" />
 			</v-card>
 			<v-card :loading="feedLoading" class="mt-10">
@@ -22,6 +24,15 @@
 					Feed
 				</v-card-title>
 			</v-card>
+			<div
+				v-if="
+					feed.news[0] === undefined && feed.guides[0] === undefined
+				"
+				class="text-h6 text-mainText pa-6"
+				align="center"
+			>
+				That's a bit sad but there isn't any post yet :(
+			</div>
 			<div
 				v-if="feed.news[0]"
 				v-for="feedNews in feed.news"
