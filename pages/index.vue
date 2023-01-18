@@ -22,10 +22,15 @@
 					Feed
 				</v-card-title>
 			</v-card>
-			<div v-for="feedNews in feed.news" :key="feedNews.attributes.slug">
+			<div
+				v-if="feed.news[0]"
+				v-for="feedNews in feed.news"
+				:key="feedNews.attributes.slug"
+			>
 				<NewsCard :news="feedNews" />
 			</div>
 			<div
+				v-if="feed.guides[0]"
 				v-for="feedGuide in feed.guides"
 				:key="feedGuide.attributes.slug"
 			>
@@ -58,9 +63,11 @@ export default {
 
 		Api.getFeed().then((response) => {
 			const tempFeed = response;
-			this.feed.news.push(tempFeed.news.data[0]);
-			this.feed.news.push(tempFeed.news.data[1]);
-			this.feed.guides.push(tempFeed.guides.data[0]);
+			try {
+				this.feed.news.push(tempFeed.news.data[0]);
+				this.feed.news.push(tempFeed.news.data[1]);
+				this.feed.guides.push(tempFeed.guides.data[0]);
+			} catch (error) {}
 			this.feedLoading = false;
 		});
 	},
