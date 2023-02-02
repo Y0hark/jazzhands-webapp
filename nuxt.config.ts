@@ -8,7 +8,6 @@ export default defineNuxtConfig({
 	app: {
     head: {
       charset: 'utf-16',
-      viewport: 'width=500, initial-scale=1',
       title: 'Jazzhands Guild',
       meta: [
         { name: 'description', content: 'A jazzy Dislyte Club 2.0.' }
