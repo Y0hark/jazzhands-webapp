@@ -5,6 +5,16 @@ export default defineNuxtConfig({
 		'process.env.DEBUG': false,
 		},
 	},
+	app: {
+    head: {
+      charset: 'utf-16',
+      viewport: 'width=500, initial-scale=1',
+      title: 'Jazzhands Guild',
+      meta: [
+        { name: 'description', content: 'A jazzy Dislyte Club 2.0.' }
+      ],
+    }
+  },
 	ssr: false,
 	css: ['vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css', '@/assets/css/main.css'],
 	build: {
