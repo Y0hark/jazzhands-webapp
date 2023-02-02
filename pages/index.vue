@@ -4,7 +4,7 @@
 			<img
 				src="../assets/images/logo.jpg"
 				alt="logo"
-				class="mx-auto d-block w-50 h-50 mb-6"
+				class="mx-auto d-block mb-6 logo"
 			/>
 			<v-card :loading="bossMessageLoading" class="mb-2">
 				<v-card-title class="text-h6 text-mainText">
@@ -86,4 +86,9 @@ export default {
 	},
 };
 </script>
-<style></style>
+<style>
+.logo {
+	width: 200px;
+	height: 200px;
+}
+</style>
