@@ -1,5 +1,5 @@
 <template>
-	<v-app class="text-mainText bg-mainBackground">
+	<v-app class="text-mainText backgroundImage">
 		<NuxtLayout>
 			<NavBar />
 			<NuxtPage class="mb-14 text-mainText" />

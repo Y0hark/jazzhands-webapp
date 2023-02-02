@@ -1,9 +1,11 @@
 <template>
 	<v-container grid-list-xs>
 		<div>
-			<h1 class="text-h3 text-center mb-8">
-				<span class="text-center text-h6"></span>Jazzhands Club's Home
-			</h1>
+			<img
+				src="../assets/images/logo.jpg"
+				alt="logo"
+				class="mx-auto d-block w-50 h-50 mb-6"
+			/>
 			<v-card :loading="bossMessageLoading" class="mb-2">
 				<v-card-title class="text-h6 text-mainText">
 					Boss' message

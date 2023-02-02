@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<v-card class="my-3">
-			<v-card-title class="pb-0 text-mainText">
+			<v-card-title class="pb-0 text-mainText global-title">
 				{{ news.attributes.title }}
 			</v-card-title>
 

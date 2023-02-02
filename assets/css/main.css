@@ -1,0 +1,16 @@
+.backgroundImage {
+	background: url("../images/background.jpg") no-repeat center center
+		fixed !important;
+	background-size: cover;
+}
+
+/* if the title is too long, make it move and prevent the text from wrapping
+*/
+
+.global-title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: initial!important;
+    white-space: initial!important;
+}
+

@@ -4,15 +4,16 @@
 		fixed="true"
 		:model-value="this.$route.name"
 		mandatory="true"
-		class="text-mainText"
+		bg-color="#393c4e"
 	>
 		<v-btn
 			v-for="(btn, index) in buttons"
 			:key="index"
 			:to="btn.link"
 			:value="btn.value"
+			color="white"
 		>
-			<v-icon>{{ btn.icon }}</v-icon>
+			<v-icon color="white">{{ btn.icon }}</v-icon>
 
 			<span>{{ btn.text }}</span>
 		</v-btn>

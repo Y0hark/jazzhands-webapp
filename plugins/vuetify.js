@@ -24,6 +24,21 @@ export default defineNuxtPlugin(nuxtApp => {
 					mainBackground: '#FDF9FF',
 				},
 			},
+			dark: {
+				dark: true,
+				colors : {
+					primary: '#8F78FF',
+					primary2: '#C8BDFF',
+					secondary: '#2FDDE1',
+					secondary2: '#C1F5F6',
+					accent: '#6AFDA8',
+					accentlight: '#D3FFE5',
+					accent2: '#F0B7FF',
+					accent2light: '#FBEAFF',
+					mainText: '#203138',
+					mainBackground: '#FDF9FF',
+				},
+			},
 		},
 	},
   })
