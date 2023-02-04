@@ -4,7 +4,7 @@
 			<img
 				src="../assets/images/logo.jpg"
 				alt="logo"
-				class="mx-auto d-block mb-6 logo"
+				class="mx-auto d-block mb-6 logo rounded-circle neon-logo"
 			/>
 			<v-card :loading="bossMessageLoading" class="mb-2">
 				<v-card-title class="text-h6 text-mainText">
@@ -90,5 +90,21 @@ export default {
 .logo {
 	width: 200px;
 	height: 200px;
+	/* neon #460969 effect */
+	box-shadow: 0 0 10px #460969, 0 0 20px #460969, 0 0 40px #460969,
+		0 0 80px #460969, 0 0 160px #460969;
+	/* glowing effect */
+	animation: glow 2s ease-in-out infinite alternate;
+}
+/* glowing animation */
+@keyframes glow {
+	from {
+		box-shadow: 0 0 10px #460969, 0 0 20px #460969, 0 0 40px #460969,
+			0 0 80px #460969, 0 0 160px #460969;
+	}
+	to {
+		box-shadow: 0 0 20px #460969, 0 0 40px #460969, 0 0 80px #460969,
+			0 0 160px #460969, 0 0 320px #460969;
+	}
 }
 </style>
