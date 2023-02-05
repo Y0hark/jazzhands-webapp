@@ -1,7 +1,11 @@
 <template>
 	<div>
 		<v-container grid-list-xs>
-			<v-card v-if="guideLoading" :loading="guideLoading">
+			<v-card
+				v-if="guideLoading"
+				:loading="guideLoading"
+				class="card-main"
+			>
 				<v-card-title class="text-h6 text-mainText">
 					Loading...
 				</v-card-title>
