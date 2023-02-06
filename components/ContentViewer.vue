@@ -9,6 +9,7 @@
 		<v-card-text
 			v-if="content.__component == 'content.text'"
 			v-html="content.text_content"
+			class="ml-4"
 		>
 		</v-card-text>
 		<v-card-text v-if="content.__component == 'content.link'">
@@ -32,4 +33,18 @@ export default {
 	},
 };
 </script>
-<style></style>
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+ul,
+ol {
+	margin-left: 1rem;
+}
+</style>
