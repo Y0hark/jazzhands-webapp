@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<nuxt-link :to="'guides/' + guide.id" class="text-decoration-none">
-			<v-card>
+			<v-card class="card-main">
 				<v-card-text class="text-h6 text-mainText">
 					{{ guide.attributes.title }}
 				</v-card-text>
