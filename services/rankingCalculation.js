@@ -272,7 +272,7 @@ class Ranker {
 	 */
 	static getTemporalTowerPoints(temporalTowerFloor, config) {
 
-		while (temporalTowerFloor % 5 != 0) {
+		while (temporalTowerFloor % 5 != 0 || temporalTowerFloor == 1) {
 			temporalTowerFloor -= 1
 		}
 
