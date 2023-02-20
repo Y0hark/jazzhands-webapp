@@ -6,8 +6,8 @@
 				alt="logo"
 				class="mx-auto d-block mb-6 logo rounded-circle neon-logo"
 			/>
-			<v-card :loading="bossMessageLoading" class="mb-2">
-				<v-card-title class="text-h6 text-mainText">
+			<v-card :loading="bossMessageLoading" class="mb-2 card-main">
+				<v-card-title class="text-h6 text-primary">
 					Boss' message
 				</v-card-title>
 			</v-card>
@@ -18,13 +18,11 @@
 			>
 				That's a bit sad but the boss hasn't posted any message yet :(
 			</div>
-			<v-card v-if="homeMessage != ''">
+			<v-card v-if="homeMessage != ''" class="card-main">
 				<v-card-text v-html="homeMessage" class="text-mainText" />
 			</v-card>
-			<v-card :loading="feedLoading" class="mt-10">
-				<v-card-title class="text-h6 text-mainText">
-					Feed
-				</v-card-title>
+			<v-card :loading="feedLoading" class="mt-10 card-main">
+				<v-card-title class="text-h6 text-primary"> Feed </v-card-title>
 			</v-card>
 			<div
 				v-if="

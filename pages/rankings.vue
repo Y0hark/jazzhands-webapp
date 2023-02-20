@@ -62,7 +62,11 @@
 			</v-expansion-panel>
 		</v-expansion-panels>
 		<br />
-		<v-card v-if="rankingLoading" :loading="rankingLoading">
+		<v-card
+			v-if="rankingLoading"
+			:loading="rankingLoading"
+			class="card-main"
+		>
 			<v-card-title class="text-h6 text-mainText">
 				Loading...
 			</v-card-title>
@@ -74,7 +78,7 @@
 		>
 			That's a bit sad but we don't have any players ranked to show you :(
 		</div>
-		<v-table class="text-mainText">
+		<v-table class="text-mainText card-main">
 			<thead>
 				<tr>
 					<th class="text-left">Club Rank</th>

@@ -1,7 +1,11 @@
 <template>
 	<v-container grid-list-xs>
 		<h2 class="text-h5 text-center mb-5">What's Jazzin'?</h2>
-		<v-card v-if="allNewsLoading" :loading="allNewsLoading">
+		<v-card
+			v-if="allNewsLoading"
+			:loading="allNewsLoading"
+			class="card-main"
+		>
 			<v-card-title class="text-h6 text-mainText">
 				Loading...
 			</v-card-title>

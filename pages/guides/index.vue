@@ -1,7 +1,7 @@
 <template>
 	<v-container grid-list-xs>
 		<h2 class="text-h5 text-center mb-5">Jazz Tutorials</h2>
-		<v-card v-if="allGuidesLoading" :loading="allGuidesLoading">
+		<v-card v-if="allGuidesLoading" :loading="allGuidesLoading" class="">
 			<v-card-title class="text-h6 text-mainText">
 				Loading...
 			</v-card-title>
