@@ -6,7 +6,7 @@
 				alt="logo"
 				class="mx-auto d-block mb-6 logo rounded-circle neon-logo"
 			/>
-			<v-card :loading="feedLoading" class="mt-10 card-main">
+			<v-card :loading="feedLoading" class="my-2 card-main">
 				<v-card-title class="text-h6 text-primary"> Feed </v-card-title>
 			</v-card>
 			<div
@@ -32,7 +32,7 @@
 			>
 				<GuideCard :guide="feedGuide" />
 			</div>
-			<v-card :loading="bossMessageLoading" class="mb-2 card-main">
+			<v-card :loading="bossMessageLoading" class="mb-2 mt-10 card-main">
 				<v-card-title class="text-h6 text-primary">
 					Boss' message
 				</v-card-title>
