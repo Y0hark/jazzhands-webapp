@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<nuxt-link :to="'guides/' + guide.id" class="text-decoration-none">
+		<nuxt-link
+			:to="'guides/' + guide.attributes.slug"
+			class="text-decoration-none"
+		>
 			<v-card class="card-main">
 				<v-card-text class="text-h6 text-mainText">
 					{{ guide.attributes.title }}
