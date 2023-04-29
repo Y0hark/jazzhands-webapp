@@ -133,6 +133,8 @@ export default {
 					member.attributes.shadowstream,
 					member.attributes.shadowfire,
 					member.attributes.darkstarlord,
+					member.attributes.countessSonica,
+					member.attributes.phobetor,
 					member.attributes.infinityTowerFloor,
 					member.attributes.infinityTowerStars,
 					member.attributes.temporalTowerFloor,

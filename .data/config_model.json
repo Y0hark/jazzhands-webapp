@@ -129,11 +129,11 @@
 			},
 			{
 				"tier": 15,
-				"scoreMulti": 1
+				"scoreMulti": 1.5
 			},
 			{
 				"tier": 16,
-				"scoreMulti": 1.2
+				"scoreMulti": 2
 			}
 		]
 	},
@@ -141,11 +141,11 @@
 		"speed": [
 			{
 				"time": "0:40",
-				"scoreMulti": 3
+				"scoreMulti": 3.5
 			},
 			{
 				"time": "0:50",
-				"scoreMulti": 2.9
+				"scoreMulti": 3
 			},
 			{
 				"time": "1:00",
@@ -153,55 +153,55 @@
 			},
 			{
 				"time": "1:10",
-				"scoreMulti": 2.7
-			},
-			{
-				"time": "1:20",
 				"scoreMulti": 2.6
 			},
 			{
-				"time": "1:30",
-				"scoreMulti": 2.5
-			},
-			{
-				"time": "1:40",
+				"time": "1:20",
 				"scoreMulti": 2.4
 			},
 			{
-				"time": "1:50",
-				"scoreMulti": 2.3
-			},
-			{
-				"time": "2:00",
+				"time": "1:30",
 				"scoreMulti": 2.2
 			},
 			{
-				"time": "2:10",
+				"time": "1:40",
 				"scoreMulti": 2
 			},
 			{
-				"time": "2:20",
+				"time": "1:50",
 				"scoreMulti": 1.8
 			},
 			{
-				"time": "2:30",
+				"time": "2:00",
 				"scoreMulti": 1.6
 			},
 			{
-				"time": "2:40",
+				"time": "2:10",
 				"scoreMulti": 1.4
 			},
 			{
-				"time": "2:50",
+				"time": "2:20",
 				"scoreMulti": 1.2
 			},
 			{
-				"time": "3:00",
+				"time": "2:30",
 				"scoreMulti": 1
 			},
 			{
-				"time": "3:10",
+				"time": "2:40",
+				"scoreMulti": 1
+			},
+			{
+				"time": "2:50",
+				"scoreMulti": 1
+			},
+			{
+				"time": "3:00",
 				"scoreMulti": 0.8
+			},
+			{
+				"time": "3:10",
+				"scoreMulti": 0.6
 			},
 			{
 				"time": "3:20",
@@ -279,20 +279,20 @@
 			},
 			{
 				"tier": 14,
-				"scoreMulti": 1
+				"scoreMulti": 1.2
 			},
 			{
 				"tier": 15,
-				"scoreMulti": 1
+				"scoreMulti": 1.5
 			},
 			{
 				"tier": 16,
-				"scoreMulti": 1.2
+				"scoreMulti": 2
 			}
 		]
 	},
 	"globalConfig": {
-		"ritualBaseScore": 5,
+		"ritualBaseScore": 20,
 		"pointWarBaseScore": 20,
 		"sentinelBaseScore": 20,
 		"desolatedLandsBaseScore": 15,
@@ -306,11 +306,11 @@
 		"speed": [
 			{
 				"time": "0:20",
-				"scoreMulti": 2.5
+				"scoreMulti": 3
 			},
 			{
 				"time": "0:30",
-				"scoreMulti": 2.4
+				"scoreMulti": 2.5
 			},
 			{
 				"time": "0:40",
@@ -432,11 +432,11 @@
 			},
 			{
 				"tier": 15,
-				"scoreMulti": 1
+				"scoreMulti": 1.5
 			},
 			{
 				"tier": 16,
-				"scoreMulti": 1.2
+				"scoreMulti": 2
 			}
 		]
 	},
@@ -559,11 +559,11 @@
 				"scoreMulti": "2.5"
 			},
 			{
-				"grade": "EX2",
+				"grade": "EXPLUS",
 				"scoreMulti": "3"
 			},
 			{
-				"grade": "EX3",
+				"grade": "EX2PLUS",
 				"scoreMulti": "3.5"
 			},
 			{
@@ -631,11 +631,11 @@
 				"scoreMulti": "2.5"
 			},
 			{
-				"grade": "EX2",
+				"grade": "EXPLUS",
 				"scoreMulti": "3"
 			},
 			{
-				"grade": "EX3",
+				"grade": "EX2PLUS",
 				"scoreMulti": "3.5"
 			},
 			{
@@ -688,47 +688,131 @@
 			},
 			{
 				"grade": "S",
-				"scoreMulti": "1.2"
+				"scoreMulti": "1"
 			},
 			{
 				"grade": "SS",
-				"scoreMulti": "1.5"
+				"scoreMulti": "1"
 			},
 			{
 				"grade": "SSS",
-				"scoreMulti": "2"
+				"scoreMulti": "1.2"
 			},
 			{
 				"grade": "EX",
+				"scoreMulti": "1.8"
+			},
+			{
+				"grade": "EXPLUS",
+				"scoreMulti": "2"
+			},
+			{
+				"grade": "EX2PLUS",
+				"scoreMulti": "2.5"
+			}
+		]
+	},
+	"countessConfig": {
+		"grades": [
+			{
+				"grade": "E",
+				"scoreMulti": "0.1"
+			},
+			{
+				"grade": "D",
+				"scoreMulti": "0.2"
+			},
+			{
+				"grade": "C",
+				"scoreMulti": "0.3"
+			},
+			{
+				"grade": "B",
+				"scoreMulti": "0.4"
+			},
+			{
+				"grade": "A",
+				"scoreMulti": "0.8"
+			},
+			{
+				"grade": "A2",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "S",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "SS",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "SSS",
+				"scoreMulti": "1.5"
+			},
+			{
+				"grade": "EX",
+				"scoreMulti": "2"
+			},
+			{
+				"grade": "EXPLUS",
 				"scoreMulti": "2.5"
 			},
 			{
-				"grade": "EX2",
+				"grade": "EX2PLUS",
 				"scoreMulti": "3"
+			}
+		]
+	},
+	"phobetorConfig": {
+		"grades": [
+			{
+				"grade": "E",
+				"scoreMulti": "0.1"
 			},
 			{
-				"grade": "EX3",
-				"scoreMulti": "3.5"
+				"grade": "D",
+				"scoreMulti": "0.2"
 			},
 			{
-				"grade": "EX5",
-				"scoreMulti": "4"
+				"grade": "C",
+				"scoreMulti": "0.3"
 			},
 			{
-				"grade": "EX7.5",
-				"scoreMulti": "4.5"
+				"grade": "B",
+				"scoreMulti": "0.4"
 			},
 			{
-				"grade": "EX10",
-				"scoreMulti": "5"
+				"grade": "A",
+				"scoreMulti": "0.8"
 			},
 			{
-				"grade": "EX12.5",
-				"scoreMulti": "5.5"
+				"grade": "A2",
+				"scoreMulti": "1"
 			},
 			{
-				"grade": "EX15",
-				"scoreMulti": "6"
+				"grade": "S",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "SS",
+				"scoreMulti": "1"
+			},
+			{
+				"grade": "SSS",
+				"scoreMulti": "1.2"
+			},
+			{
+				"grade": "EX",
+				"scoreMulti": "1.4"
+			},
+			{
+				"grade": "EXPLUS",
+				"scoreMulti": "1.8"
+			},
+			{
+				"grade": "EX2PLUS",
+				"scoreMulti": "2"
 			}
 		]
 	},
@@ -775,11 +859,11 @@
 				"scoreMulti": "2.5"
 			},
 			{
-				"grade": "EX2",
+				"grade": "EXPLUS",
 				"scoreMulti": "3"
 			},
 			{
-				"grade": "EX3",
+				"grade": "EX2PLUS",
 				"scoreMulti": "3.5"
 			},
 			{

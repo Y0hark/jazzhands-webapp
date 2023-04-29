@@ -34,6 +34,8 @@ class Ranker {
 		gradeShadowstream,
 		gradeShadowfire,
 		gradeDarkstarlord,
+		gradeCountess,
+		gradePhobetor,
 		infinityTowerFloor,
 		infinityTowerStars,
 		temporalTowerFloor,
@@ -74,6 +76,8 @@ class Ranker {
 		);
 		const sentinelPoints = this.getSentinelPoints(
 			gradeDarkstarlord,
+			gradeCountess,
+			gradePhobetor,
 			config
 		);
 		const infinityTowerPoints = this.getInfinityTowerPoints(
@@ -208,17 +212,36 @@ class Ranker {
 
 	/**
 	 *
-	 * @param {string} gradeDarkstarlord -> "E"-"EX+" -> The best grade achieved for Darkstarlord
+	 * @param {string} gradeDarkstarlord -> "E"-"EX++" -> The best grade achieved for Darkstarlord
+	 * @param {string} gradeCountess -> "E"-"EX++" -> The best grade achieved for Countess
+	 * @param {string} gradePhobetor -> "E"-"EX++" -> The best grade achieved for Phobetor
 	 * @returns {number} -> The total sentinel points
 	 */
-	static getSentinelPoints(gradeDarkstarlord, config) {
+	static getSentinelPoints(gradeDarkstarlord, gradeCountess, gradePhobetor, config) {
+		
+		// Darkstar lord calculation
 		const darkstarlordMulti = config.darkStarLordConfig.grades.find(
 			(grade) => grade.grade === gradeDarkstarlord
 		).scoreMulti;
 		const darkstarlordPoints =
 			darkstarlordMulti * config.globalConfig.sentinelBaseScore;
+		
+		// Countess calculation
+		const countessMulti = config.countessConfig.grades.find(
+			(grade) => grade.grade === gradeCountess
+		).scoreMulti;
+		const countessPoints =
+			countessMulti * config.globalConfig.sentinelBaseScore;
 
-		return darkstarlordPoints;
+		// Phobetor calculation
+		const phobetorMulti = config.phobetorConfig.grades.find(
+			(grade) => grade.grade === gradePhobetor
+		).scoreMulti;
+		const phobetorPoints =
+			phobetorMulti * config.globalConfig.sentinelBaseScore;
+
+
+		return darkstarlordPoints + countessPoints + phobetorPoints;
 	}
 
 	/**
