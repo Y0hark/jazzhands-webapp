@@ -539,7 +539,7 @@
 				"scoreMulti": "0.8"
 			},
 			{
-				"grade": "A2",
+				"grade": "APLUS",
 				"scoreMulti": "1"
 			},
 			{
@@ -611,7 +611,7 @@
 				"scoreMulti": "0.8"
 			},
 			{
-				"grade": "A2",
+				"grade": "APLUS",
 				"scoreMulti": "1"
 			},
 			{
@@ -683,10 +683,6 @@
 				"scoreMulti": "0.8"
 			},
 			{
-				"grade": "A2",
-				"scoreMulti": "1"
-			},
-			{
 				"grade": "S",
 				"scoreMulti": "1"
 			},
@@ -733,10 +729,6 @@
 			{
 				"grade": "A",
 				"scoreMulti": "0.8"
-			},
-			{
-				"grade": "A2",
-				"scoreMulti": "1"
 			},
 			{
 				"grade": "S",
@@ -787,10 +779,6 @@
 				"scoreMulti": "0.8"
 			},
 			{
-				"grade": "A2",
-				"scoreMulti": "1"
-			},
-			{
 				"grade": "S",
 				"scoreMulti": "1"
 			},
@@ -839,7 +827,7 @@
 				"scoreMulti": "0.8"
 			},
 			{
-				"grade": "A2",
+				"grade": "APLUS",
 				"scoreMulti": "1"
 			},
 			{
